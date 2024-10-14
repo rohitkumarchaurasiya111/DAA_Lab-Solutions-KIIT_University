@@ -1,6 +1,6 @@
 // Write a program to find out the second smallest and second largest element stored in an array of n integers.
 // Input: Size of the array is ‘n’ and read ‘n’ number of elements from a disc file.
-// Output: Second smallest, Second largest
+// Output: Second smallest, Second largest...
 
 #include <stdio.h>
 #include <limits.h>
