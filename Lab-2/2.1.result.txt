@@ -1,0 +1,6 @@
+The binary of 4 is 100
+The binary of 5 is 101
+The binary of 2 is 10
+The binary of 4 is 100
+The binary of 5 is 101
+The binary of 2 is 10

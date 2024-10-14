@@ -1,0 +1,5 @@
+The binary of 2 is '10'.
+The binary of 5 is '101'.
+The binary of 4 is '100'.
+The binary of 9 is '1001'.
+The binary of 10 is '1010'.

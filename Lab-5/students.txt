@@ -1,0 +1,8 @@
+7
+0 Sanu 39 77 231
+1 Subash 56 77 129
+2 Rohit 63 78 240
+3 Sonu 47 72 229
+4 Rohan 24 75 171
+5 Aman 38 73 102
+6 Sanjiv 23 75 145

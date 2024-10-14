@@ -1,0 +1,2 @@
+ The gcd of 6 and 2 is '3'.
+The gcd of 4 and 963411629 is '3'.
