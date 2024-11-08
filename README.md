@@ -90,7 +90,7 @@ Each lab folder contains relevant source code files for the experiments conducte
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/daa-lab-solutions.git
+   git clone [https://github.com/yourusername/daa-lab-solutions.git](https://github.com/rohitkumarchaurasiya111/DAA_Lab-Solutions-KIIT_University.git)
    ```
 
 2. Navigate to the relevant lab folder:
@@ -100,8 +100,8 @@ Each lab folder contains relevant source code files for the experiments conducte
 
 3. Compile the programs using a C/C++ compiler:
    ```bash
-   gcc lab1q1.c -o lab1q1
-   ./lab1q1
+   gcc 1.c
+   .\a.exe
    ```
 
 4. Follow the instructions in the terminal to input necessary data or test cases.
