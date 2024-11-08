@@ -78,6 +78,7 @@ DAA Lab 5th Semester - KIIT/
 ├── Lab-7/
 ├── Lab-8/
 ├── Lab-9/
+├── Lab-10/
 ├── Searching_Algorithm/
 ├── Sorting_Algorithm/
 └── File/
