@@ -2,47 +2,53 @@
 
 #include <stdio.h>
 
+// Function to calculate GCD using recursion (Euclidean algorithm)
 int gcd(int a, int b)
 {
-    if (a <= b)
-    {
-        for (int i = a; i > 0; i--)
-        {
-            if (b % i == 0 && a % i == 0)
-            {
-                return i;
-            }
-        }
-    }
-    else
-    {
-        gcd(b, a);
-    }
-    return 1;
+    if (b == 0)
+        return a;
+    return gcd(b, a % b);
 }
 
 int main()
 {
-    FILE *ptr1;
+    FILE *ptr1, *ptr2;
+    int num[100]; // Array to store numbers, adjust size if necessary
+    int i = 0;
+
+    // Open the input file for reading
     ptr1 = fopen("2.3.txt", "r");
-    int i = 8;
-    // fscanf(ptr1, "%d", &i);
-    int num[i];
-
-    for (int j = 0; j < i; j++)
+    if (ptr1 == NULL)
     {
-        fscanf(ptr1, "%d", &num[i]);
-    }
-    for(int j=0;j<i;j++){
-        printf("%d ",num[i]);
+        printf("Error opening file.\n");
+        return 1;
     }
 
-    FILE *ptr2;
+    // Read all numbers from the file into the array
+    while (fscanf(ptr1, "%d", &num[i]) != EOF)
+    {
+        i++;
+    }
+    fclose(ptr1); // Close the input file
+
+    // Open the output file for appending the results
     ptr2 = fopen("2.3.result.txt", "a");
-    for (int j = 0; j < i / 2; j = j + 2)
+    if (ptr2 == NULL)
     {
-        int result = gcd(num[i], num[i + 1]);
-        fprintf(ptr2, "The GCD of %d and %d is %d\n", num[i], num[i + 1], result);
+        printf("Error opening result file.\n");
+        return 1;
     }
 
+    // Calculate GCD for every pair of numbers
+    for (int j = 0; j < i - 1; j += 2)
+    {
+        int result = gcd(num[j], num[j + 1]);
+        fprintf(ptr2, "The GCD of %d and %d is %d\n", num[j], num[j + 1], result);
+    }
+
+    fclose(ptr2); // Close the output file
+
+    printf("GCD calculations completed and saved to 2.3.result.txt\n");
+
+    return 0;
 }
